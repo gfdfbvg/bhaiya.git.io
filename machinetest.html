@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <table>
+    <td>
+        <td>
+            <label>Name:</label>
+        </td>
+        <td>
+            <input type="text" id="txtname">
+        </td>
+        <td>
+            <label>From Date:</label>
+        </td>
+        <td>
+            <input type="date" id="txtFDate">
+        </td>
+        <td>
+            <label>To Date:</label>
+        </td>
+        <td>
+            <input type="date" id="txtTDate">
+        </td>
+        <td>
+            <button onclick="addRow()">Submit</button>
+        </td>
+
+
+    </td>
+   </table>
+
+   <hr>
+   <table id="tbl" border="1">
+
+   </table>
+</body>
+<script>
+function addRow(){
+    var name=$('#txtname').val()
+    var s=$('#txtFDate').val()
+    var e=$('#txtTDate').val()
+ 
+    var arr=getDatesInRange(new Date(s),new Date(e));
+    //var current=arr
+var html="";
+if($('#tbl').find('tr').length==0){
+html+="<tr><td>Sr NO</td><td>Name</td>";
+for(var i=0;i<arr.length;i++)
+{
+    html+="<td>"+arr[i].getDate()+"/"+(arr[i].getMonth()+1)+"/"+arr[i].getFullYear()+"</td>";
+}
+html+="</tr>";
+}
+if($('#tbl').find('tr').length==0)
+{
+    html+="<tr><td>"+($('#tbl').find('tr').length+1)+"</td><td>"+name+"</td>";
+}
+else{
+    html+="<tr><td>"+($('#tbl').find('tr').length)+"</td><td>"+name+"</td>";
+}
+for(var i=0;i<arr.length;i++)
+{
+    html+="<td><select><option>Select</option><option>SL</option><option>CL</option><option>PL</option></select></td>";
+}
+html+="</tr>";
+
+$('#tbl').html(html)
+}
+
+function getDatesInRange(startDate, endDate) {
+  const date = new Date(startDate.getTime());
+
+  const dates = [];
+
+  while (date <= endDate) {
+    dates.push(new Date(date));
+    date.setDate(date.getDate() + 1);
+  }
+
+  return dates;
+}
+</script>
+
+</html>
