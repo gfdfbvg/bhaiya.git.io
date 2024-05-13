@@ -1,92 +1,470 @@
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="keywords" content="pushpendra singh, portfolio, pushpendra,portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Pushpendra's Portfolio. Full-Stack Web Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="Image/hero.jpeg" style="border-radius:50%" type="image/x-png">
+    <title>Portfolio | Pushpendra Singh</title>
 </head>
-<body>
-   <table>
-    <td>
-        <td>
-            <label>Name:</label>
-        </td>
-        <td>
-            <input type="text" id="txtname">
-        </td>
-        <td>
-            <label>From Date:</label>
-        </td>
-        <td>
-            <input type="date" id="txtFDate">
-        </td>
-        <td>
-            <label>To Date:</label>
-        </td>
-        <td>
-            <input type="date" id="txtTDate">
-        </td>
-        <td>
-            <button onclick="addRow()">Submit</button>
-        </td>
+<body oncontextmenu="return false">
+    <header>
+        <a href="/" class="logo"><i class=""></i>Pushpendra</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="content">
+            <h2>Hi There,<br /> I'm Pushpendra <span>Singh</span></h2>
+            <p>i am into <span class="typing-text"></span></p>
+            <a href="#about" class="btn">
+                <span>About Me</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a class="twitter" aria-label="Twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="telegram" aria-label="Telegram" href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="#"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image">
+            <!-- <img draggable="false" class="tilt" src="/Portfol/images/hero.jpeg" alt=""> -->
+
+            <img draggable="false" class="tilt" src="Image/hero.jpeg" alt="heroherohero">
+
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+        <div class="row">
+            <div class="image">
+                <img draggable="false" class="tilt" src="Image/profile2 .jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>I'm Pushpendra</h3>
+                <span class="tag">Full Stack Developer</span>
+                <p>
+                    I am a Full-Stack developer based in Lucknow, India.
+                    I am an Computer Science & Engineering undergraduate from AKTU.
+                    I am very passionate about improving my coding skills & developing applications & websites.
+                    I build Websites using Full Stack.
+                    Working for myself to improve my skills.
+                    Love to build Full-Stack clones.
+                </p>
+                <div class="box-container">
+                    <div class="box">
+                        <p><span> email : </span> bhaiyap823@gmail.com</p>
+                        <p><span> place : </span> Lucknow, India - 226022</p>
+                    </div>
+                </div>
+                <div class="resumebtn">
+                    <a href="https://drive.google.com/file/d/1EqH7DIxTVjUOJZeYssT2EOoTqtHAWF4d/view?usp=drivesdk" target="_blank" class="btn">
+                        <span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+        <div class="container">
+
+            <div class="skillbar-wrapper">
+                <div class="skillbar clearfix html5" data-percent="80%">
+                    <h4 class="skillbar-title"><span>HTML</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix css" data-percent="80%">
+                    <h4 class="skillbar-title"><span>CSS</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix javascript" data-percent="60%">
+                    <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+
+                <div class="skillbar clearfix jquery" data-percent="80%">
+                    <h4 class="skillbar-title"><span>jQuery</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix bootstrap" data-percent="80%">
+                    <h4 class="skillbar-title"><span>Bootstrap</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar clearfix csharp" data-percent="80%">
+                    <h4 class="skillbar-title"><span>C#</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar clearfix wordpress" data-percent="80%">
+                    <h4 class="skillbar-title"><span>Asp.net</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar clearfix mvc" data-percent="80%">
+                    <h4 class="skillbar-title"><span>Asp.net with MVC</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix aspnetcore" data-percent="60%">
+                    <h4 class="skillbar-title"><span>Asp.net core</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+
+                <div class="skillbar clearfix server" data-percent="80%">
+                    <h4 class="skillbar-title"><span>MsSql</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar clearfix webapi" data-percent="60%">
+                    <h4 class="skillbar-title"><span>Web Api</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+                <div class="skillbar clearfix linq" data-percent="80%">
+                    <h4 class="skillbar-title"><span>Linq</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar clearfix entityframework" data-percent="60%">
+                    <h4 class="skillbar-title"><span>Entity Framework</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- skills section ends -->
+    <!-- education section starts -->
+    <section class="education" id="education">
+
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+        <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="Image/educat/college.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+                    <p>Seth Visambhar Nath Group of Institute | Lucknow</p>
+                    <h4>2020-2023 | Completed</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="Image/educat/diplomacollege.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Diploma | Computer Science and Engineering</h3>
+                    <p>Govt. Polytechnic College Talbehat | BTEUP</p>
+                    <h4>2017-2020 | Completed</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="Image/educat/intermediatecollege.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Highschool-Intermediate | Science</h3>
+                    <p>MSD Gramanchal Memo. Titra | UPBOARD</p>
+                    <h4>2014-2016 | Completed</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education section ends -->
+    <!-- work project section starts -->
 
 
-    </td>
-   </table>
 
-   <hr>
-   <table id="tbl" border="1">
 
-   </table>
+
+
+
+    <!--<section class="education" id="education" style="background-color:#4b01da;">
+
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+        <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+        <br />
+        <br />
+
+        <div  style="color:white!important">
+            <h1>Project - 1 Recipe Costing</h1>
+
+            <h2>About Recipe Costing Software</h2>
+
+            <p>
+                Recipe Costing is a software designed for plate cost calculation, inventory management, sales management, and account management. It is integrated with QuickBooks for efficient account management.
+            </p>
+
+            <h2>Login Types</h2>
+            <ol>
+                <li>Admin</li>
+                <li>User</li>
+                <li>Manager</li>
+                <li>Chef</li>
+                <li>Labor</li>
+            </ol>
+
+            <h2>Roles and Responsibilities</h2>
+            <h3>Team Member</h3>
+            <p>
+                As a team member, I have the following responsibilities:
+            </p>
+            <ul>
+                <li>Worked on API integration to sync menu items with third-party services like Square and Clover using APIs.</li>
+                <li>Developed the frontend module for the recipe book where users can create their own recipe books, add recipes, and send them to their email addresses.</li>
+            </ul>
+
+            <footer>
+                <p>
+                    This project demonstrates various functionalities including API integration, frontend development, and user management within a comprehensive recipe costing and management system.
+                </p>
+            </footer>
+
+        </div>
+
+
+
+
+    </section>-->
+
+
+
+
+
+
+
+
+    <!-- work project section ends -->
+    <!-- experience section starts -->
+    <section class="experience" id="experience">
+
+        <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+        <div class="timeline">
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Bytexus Software Solution Pvt Ltd Lucknow</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Software Engineer</h3>
+                        <p>Aug 2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Technosys Service Pvt Ltd Lucknow</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Junior Assistant trainee</h3>
+                        <p>March 2021 - july 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Arcane Programming Infotech Lucknow</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Website Developer | Apperenticeship</h3>
+                        <p>Sep 2020 - March 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Mecatredz Technology Pvt Ltd Lucknow</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Website Developer | Summer Training</h3>
+                        <p>June 2019 - aug 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Inshort Web Solution Pvt Ltd Lucknow</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>MsSql Server | Winter Training</h3>
+                        <p>April 2021 - April 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="morebtn">
+                <a href="#" class="btn">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- experience section ends -->
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+
+        <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+        <div class="container">
+            <div class="content">
+                <div class="image-box">
+                    <img draggable="false" src="Image/contact1.png" alt="contact">
+                </div>
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <i class='fas fa-user'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email" required>
+                            <i class='fas fa-envelope'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="Phone">
+                            <i class='fas fa-phone-alt'></i>
+                        </div>
+                        <div class="message">
+                            <textarea placeholder="Message" name="message" required></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">
+                            Submit <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Pushpendra's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+                <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+                <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+                <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+                <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i>+91 6394431317</p>
+                <p> <i class="fas fa-envelope"></i>bhaiyap823@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>Lucknow, India-226022</p>
+                <div class="share">
+
+                    <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                    <a href="#" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                    <a href="mailto:bhaiyap823@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                    <a href="#" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="credit"><i class="fa fa-heart pulse"></i><a href="#"> Pushpendra Singh</a></h1>
+
+    </section>
+    <!-- footer section ends -->
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- typed.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- particle.js links -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- vanilla tilt.js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+    <script src="js/script.js"></script>
 </body>
-<script>
-function addRow(){
-    var name=$('#txtname').val()
-    var s=$('#txtFDate').val()
-    var e=$('#txtTDate').val()
- 
-    var arr=getDatesInRange(new Date(s),new Date(e));
-    //var current=arr
-var html="";
-if($('#tbl').find('tr').length==0){
-html+="<tr><td>Sr NO</td><td>Name</td>";
-for(var i=0;i<arr.length;i++)
-{
-    html+="<td>"+arr[i].getDate()+"/"+(arr[i].getMonth()+1)+"/"+arr[i].getFullYear()+"</td>";
-}
-html+="</tr>";
-}
-if($('#tbl').find('tr').length==0)
-{
-    html+="<tr><td>"+($('#tbl').find('tr').length+1)+"</td><td>"+name+"</td>";
-}
-else{
-    html+="<tr><td>"+($('#tbl').find('tr').length)+"</td><td>"+name+"</td>";
-}
-for(var i=0;i<arr.length;i++)
-{
-    html+="<td><select><option>Select</option><option>SL</option><option>CL</option><option>PL</option></select></td>";
-}
-html+="</tr>";
-
-$('#tbl').html(html)
-}
-
-function getDatesInRange(startDate, endDate) {
-  const date = new Date(startDate.getTime());
-
-  const dates = [];
-
-  while (date <= endDate) {
-    dates.push(new Date(date));
-    date.setDate(date.getDate() + 1);
-  }
-
-  return dates;
-}
-</script>
-
 </html>
